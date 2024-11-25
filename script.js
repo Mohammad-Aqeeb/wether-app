@@ -93,7 +93,7 @@ function renderFunction(data){
     flag.src = `https://flagcdn.com/144x108/${data.sys.country.toLowerCase()}.png`;
     cityDescription.innerText = data.weather?.[0].description;
     cityDescriptionIcon.src = `https://openweathermap.org/img/w/${data.weather?.[0].icon}.png`;
-    cityTemperature.innerText = Math.round((data.main.temp)/10)+"°C";
+    cityTemperature.innerText = ((data.main.temp)/10).toFixed(2)+"°C";
     windspeed.innerText = data.wind.speed + "m/s";
     humidity.innerText = data.main.humidity + "%";
     clouds.innerText = data.clouds.all + "%";
