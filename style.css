@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'Merriweather Sans',sans-serif;
+}
+
+:root{
+    --colorDark1:#112D4E;
+    --colorDark2:#3F72Af;
+    --colorLight1:#DBE2EF;
+    --colorLight2:#F9F7F7;
+    
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: rgb(94, 94, 175);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+h1{
+    text-transform: uppercase;
+}
+.tab-container{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+.abc{
+    background-color: rgba(219, 226, 239,0.5);
+    border-radius: 4px;
+}
+
+.other-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationAccess{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.locationAccess img{
+    margin-bottom: 2rem;
+}
+
+.locationPara1{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.locationPara2{
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.75px;
+}
+
+.grantAccessButton{
+    all: unset;
+    color: var(--colorLight2);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: var(--colorDark2);
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.locationAccess.active{
+    display: flex;
+}
+
+.searchWhether{
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+}
+
+.searchWhether.active{
+    display: flex;
+}
+
+.inputContainer{
+    all: unset;
+    width: calc(100% - 50px);
+    height: 35px;
+    padding: 0 20px;
+    background-color: rgba(219, 226, 239,0.5);
+    border-radius: 10px;
+}
+
+.inputContainer::placeholder{
+    color: white;
+}
+
+.inputContainer:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.349);
+}
+
+.searchButton{
+    all: unset;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(219, 226, 239,0.5);
+}
+
+.loading{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading p{
+    text-transform: uppercase;
+}
+                        
+.loading.active{
+    display: flex;
+}
+.wheather{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wheather.active{
+    display: flex;
+}
+.wheather-name-container{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.wheather-name-container p{
+    font-size: 2rem;
+}
+
+.wheather-name-container img{
+    width: 30px;
+    height: 30px;
+}
+
+.cityDescription{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.cityDescriptionIcon{
+    width: 90px;
+    height: 90px;
+}
+
+.cityTemperature{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.city-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 20px;
+    margin-top: 2rem;
+}
+
+.parameter{
+    width: 30%;
+    max-width: 200px;
+    background-color: rgb(219, 226, 239,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.parameter img{
+    width: 50px;
+    height: 50px;    
+}
+
+.parameter p{
+    font-size: 1.15rem;
+    font-weight: 680;
+    text-transform: uppercase;
+}
+
+.parameter div{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.not-found-container{
+    display: none;
+}
+
+.not-found-container.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-container div{
+    font-size: 1.25rem;
+}
